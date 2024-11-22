@@ -42,3 +42,6 @@
 #toplevel_page_fancypost-init li:not(:last-child) a[href^="admin.php?page=fancypost_pseo"] {
     display: none !important;
 }
+#toplevel_page_fancypost-init li a[href^="admin.php?page=fancypost_setup_wizard"] {
+    display: none;
+}

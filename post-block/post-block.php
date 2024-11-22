@@ -75,6 +75,7 @@ require_once POST_BLOCK_DIR . 'custom-fields/options/admin-options.php';
 require_once POST_BLOCK_DIR . 'custom-fields/options/admin-license.php';
 require_once POST_BLOCK_DIR . 'custom-fields/options/admin-pseo.php';
 require_once POST_BLOCK_DIR . 'custom-fields/options/admin-help.php';
+require_once POST_BLOCK_DIR . 'custom-fields/options/setup-wizard.php';
 if ( 'ESSENTIAL' === FPPB_COPY ) {
 
 	require_once POST_BLOCK_DIR . 'custom-fields/options/admin-features.php';

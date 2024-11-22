@@ -271,6 +271,7 @@ class Post_Block {
 		$this->loader->add_action( 'admin_notices', $plugin_admin_cpt, 'frhdfp_admin_notice_for_header' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin_cpt, 'frhdfp_register_custom_menu_page' );
 		$this->loader->add_filter( 'plugin_action_links', $plugin_admin_cpt, 'frhdfp_add_action_plugin', 10, 5 );
+		$this->loader->add_action( 'activated_plugin', $plugin_admin_cpt, 'frhdfp_redirect_after_activation', 10, 2 );
 
 		/**
 		 * Custom Category For FancyPost.

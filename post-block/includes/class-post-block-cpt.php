@@ -49,6 +49,20 @@ class Post_Block_CPT {
 	}
 
 	/**
+	 * Redirect after activation.
+	 *
+	 * @param string $file Path to the plugin file, relative to the plugin.
+	 * @return void
+	 */
+	public function frhdfp_redirect_after_activation( $file ) {
+
+		if ( FPPB_BASE_FILE === $file ) {
+
+			exit( esc_url( wp_safe_redirect( admin_url( 'admin.php?page=fancypost_setup_wizard' ) ) ) );
+		}
+	}
+
+	/**
 	 * Custom Post Type of the Plugin.
 	 *
 	 * @since    2.0.0
